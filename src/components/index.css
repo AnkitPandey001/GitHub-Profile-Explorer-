@@ -1,0 +1,163 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #74ebd5 0%, #acb6e5 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main-div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 700px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .container:hover {
+    transform: translateY(-10px);
+  }
+  
+  .first-div h1 {
+    font-size: 40px;
+    color: rgb(78, 75, 75);
+    text-align: center;
+  }
+  
+  .first-div input {
+    width: 100%;
+    max-width: 300px;
+    height: 40px;
+    border-radius: 8px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .first-div button {
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: rgb(3, 116, 3);
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  
+  .first-div button:hover {
+    background-color: rgb(2, 95, 2);
+  }
+  
+  .apiFetched {
+    margin-top: 20px;
+  }
+  
+  .apiFetched h2 {
+    font-size: 32px;
+    color: grey;
+    text-align: center;
+  }
+  
+  .apiFetched h2 span {
+    color: rgb(0, 204, 255);
+    font-size: 25px;
+  }
+  
+  .img {
+    margin-top: 10px;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .follow,
+  .flg,
+  .repos {
+    margin-top: 10px;
+    color: grey;
+    font-size: 18px;
+  }
+  
+  .ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0;
+  }
+  
+  li {
+    background-color: rgb(76, 29, 8);
+    color: white;
+    border-radius: 5px;
+    padding: 7px 15px;
+    margin: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  li:hover {
+    transform: translateY(-5px);
+  }
+  
+  li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .error {
+    color: red;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      width: 95%;
+      padding: 10px;
+    }
+  
+    .apiFetched h2 {
+      font-size: 28px;
+    }
+  
+    .img {
+      height: 100px;
+      width: 100px;
+    }
+  
+    .ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
